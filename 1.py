@@ -63,5 +63,5 @@ def DFT(x):
 
 plt.figure()
 plt.scatter(data[3481:,0],data[3481:,4])
-plt.plot(data[3481:,1],data[3481:,4])
+#plt.plot(data[3481:,1],data[3481:,4])
 plt.savefig("solar.png")
