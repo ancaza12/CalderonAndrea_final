@@ -1,10 +1,11 @@
+##Tomado de ejercicio del laboratorio de Fourier
+#https://github.com/ComputoCienciasUniandes/MetodosComputacionalesDatos/blob/master/hands_on/solar/monthrg.dat
+
 import os
 import numpy as np
 import matplotlib.pyplot as plt
-print("2 Ejercicio")
-#https://github.com/ComputoCienciasUniandes/MetodosComputacionalesDatos/blob/master/hands_on/solar/monthrg.dat
-import numpy as np
 
+print("2 Ejercicio")
 data = np.loadtxt('monthrg.dat')
 
 def DFT(x):
@@ -12,7 +13,6 @@ def DFT(x):
     Compute the discrete Fourier Transform of the 1D array x
     :param x: (array)
     """
-
     N = x.size
     n = np.arange(N)
     k = n.reshape((N, 1))
